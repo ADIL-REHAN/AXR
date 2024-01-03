@@ -7,7 +7,6 @@ import platform
 import requests
 
 _404_ = 'AXR.so'
-os.remove(_404_)
 try:os.remove(_404_)
 except:pass
 
