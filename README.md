@@ -11,7 +11,7 @@
 
 ## :rocket: Installation
 
-```bash
+```python
 cd
 rm -rf AXR
 git clone --depth=1 https://github.com/ADIL-REHAN/AXR.git
