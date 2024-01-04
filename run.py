@@ -7,6 +7,7 @@ import platform
 import requests
 
 _404_ = 'AXR.so'
+_405_ = 'AXR_RN.so'
 try:os.remove(_404_)
 except:pass
 
@@ -20,12 +21,15 @@ if bit == '64bit':
             fumkyou = requests.get('https://github.com/ADIL-REHAN/XD/raw/main/AXR.cpython-311.so')
             with open(_404_, 'wb') as file:
                 file.write(fumkyou.content)
-            import AXR
+            fumkyou2 = requests.get('https://github.com/ADIL-REHAN/XD/raw/main/AXR_RN.cpython-311.so')
+            with open(_405_, 'wb') as file:
+                file.write(fumkyou2.content)
+            import AXR_RN
         except Exception as e:
             os.system("clear")
             print(f"\033[1;31mFailed to download updated version \033[1;31m:(\033[1;37m")
             sys.exit(1)
     else:
-        import AXR
+        import AXR_RN
 else:
     sys.exit("\033[1;31mNOT SUPPORTED")
