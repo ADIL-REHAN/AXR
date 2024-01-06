@@ -1,3 +1,2 @@
-import os
-os.system('chmod 777 AXR')
-os.system('./AXR')
+import AXR
+AXR.__menu__
