@@ -1,2 +1,2 @@
 import AXR
-AXR.__menu__
+AXR.__menu__()
