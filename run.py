@@ -1,1 +1,2 @@
 import AXR
+AXR.main()
